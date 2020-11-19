@@ -26,28 +26,14 @@ const response = fetch('https://restcountries.eu/rest/v2/all', {
                     console.log(data);
                     data.map(cont => {
                         console.log(cont.name);
-                        countries.innerHTML = `
-                        <table>
-                        <thead>
-                         <tr>
-                        <th>Name</th>
-                                     <th>Capital</th>
-                                    <th>Region</th>
-                                    <th>Population</th>
-                                    <th>Flag</th>
-                                    </tr>
-    
-                                </thead>
-                                    <tbody>
+                        table.innerHTML += `
                                 <tr >
                                 <td>${cont.name}</td>
                                 <td>${cont.capital}</td>
                                 <td>${cont.region}</td>
                                 <td>${cont.population}</td>
                                 <td ><img src=${cont.flag}></td>
-                                 </tr>
-                                 </tbody>
-                                 </table>`
+                                 </tr>`
                     
                     })
                     })
