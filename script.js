@@ -3,8 +3,6 @@ const countries = document.querySelector('.countries');
 const submitBtn = document.querySelector('.submit-btn');
 const table = document.querySelector('tbody');
 
-
-
 button.addEventListener('click', (e) => {
     e.preventDefault();
     countries.style.display = "block";

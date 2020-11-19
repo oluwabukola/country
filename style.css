@@ -45,6 +45,7 @@ th{
    text-align:center;
    color: #2b4f81;
    margin: 0 auto;
+   border: 1px solid #2b4f81;
    
   }
   tr:hover{
